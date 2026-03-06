@@ -1,5 +1,5 @@
 CREATE SCHEMA IF NOT EXISTS raw;
-CREATE SCHEMA IF NOT EXISTS meta:
+CREATE SCHEMA IF NOT EXISTS meta;
 
 -- Track ingestion runs
 CREATE TABLE IF NOT EXISTS meta.ingestion_run (
@@ -15,7 +15,6 @@ CREATE TABLE IF NOT EXISTS meta.ingestion_run (
 
 -- Raw table for patient data
 CREATE TABLE IF NOT EXISTS raw.raw_patient (
-    CREATE TABLE IF NOT EXISTS raw.raw_patient (
     patient_id TEXT PRIMARY KEY,
     birth_date DATE,
     gender TEXT,
